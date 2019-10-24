@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bxx-RX-lci">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal View Controller-->
+        <scene sceneID="cWa-qs-v3r">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="bxx-RX-lci" customClass="ModalViewController" customModule="DiscordPopupSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RgF-k7-APe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTc-9y-f5x">
+                                <rect key="frame" x="32" y="328" width="350" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J11-vk-Zr1">
+                                        <rect key="frame" x="24" y="24" width="302" height="192"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eBl-W2-lBd">
+                                                <rect key="frame" x="0.0" y="0.5" width="302" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="UC5-qg-Noa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q3L-Dh-qM3">
+                                                <rect key="frame" x="0.0" y="102.5" width="302" height="89.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending email now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swB-IM-Exw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="302" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam velit, porta et sagittis id, laoreet ut tellus. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBA-FH-XGc">
+                                                        <rect key="frame" x="0.0" y="32" width="302" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-Wb-RuX">
+                                        <rect key="frame" x="310" y="8" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="BwY-rg-rhi"/>
+                                            <constraint firstAttribute="width" constant="32" id="RfK-oC-gSF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="xmark" catalog="system"/>
+                                        <connections>
+                                            <action selector="onTapCloseButton:" destination="bxx-RX-lci" eventType="touchUpInside" id="UjE-uN-wdV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="J11-vk-Zr1" secondAttribute="trailing" constant="24" id="21M-Cr-5or"/>
+                                    <constraint firstAttribute="bottom" secondItem="J11-vk-Zr1" secondAttribute="bottom" constant="24" id="2D4-WV-GTk"/>
+                                    <constraint firstItem="J11-vk-Zr1" firstAttribute="top" secondItem="UTc-9y-f5x" secondAttribute="top" constant="24" id="M0A-Q7-fC2"/>
+                                    <constraint firstAttribute="trailing" secondItem="tdW-Wb-RuX" secondAttribute="trailing" constant="8" id="M3s-3k-0vA"/>
+                                    <constraint firstAttribute="height" constant="240" id="MDR-H3-bU7"/>
+                                    <constraint firstItem="tdW-Wb-RuX" firstAttribute="top" secondItem="UTc-9y-f5x" secondAttribute="top" constant="8" id="hxC-QW-IJ7"/>
+                                    <constraint firstItem="J11-vk-Zr1" firstAttribute="leading" secondItem="UTc-9y-f5x" secondAttribute="leading" constant="24" id="uRt-DN-tfK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.28034032534246578" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wf6-K6-j5M" firstAttribute="trailing" secondItem="UTc-9y-f5x" secondAttribute="trailing" constant="32" id="1fc-WL-FY1"/>
+                            <constraint firstItem="UTc-9y-f5x" firstAttribute="centerY" secondItem="RgF-k7-APe" secondAttribute="centerY" id="Cm0-xf-SeS"/>
+                            <constraint firstItem="UTc-9y-f5x" firstAttribute="leading" secondItem="wf6-K6-j5M" secondAttribute="leading" constant="32" id="KGS-Te-Jd9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wf6-K6-j5M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seL-sn-gZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="-276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

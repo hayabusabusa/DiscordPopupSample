@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="imY-I6-Kxu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Success Popup View Controller-->
+        <scene sceneID="7er-N4-TaJ">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="imY-I6-Kxu" customClass="APISuccessPopupViewController" customModule="DiscordPopupSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tfl-yF-nN7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2NP-Ll-blN">
+                                <rect key="frame" x="40" y="348" width="334" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xPY-Mw-dD1">
+                                        <rect key="frame" x="24" y="24" width="286" height="152"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cd2-is-qnG">
+                                                <rect key="frame" x="0.0" y="-0.5" width="286" height="66"/>
+                                                <color key="tintColor" red="0.50980392159999999" green="0.81960784310000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="S7N-H7-15A"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5l0-WW-q2n">
+                                                <rect key="frame" x="0.0" y="79" width="286" height="73"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIP-Is-CCG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="29"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                        <color key="textColor" red="0.50980392159999999" green="0.81960784310000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpg-cB-D27">
+                                                        <rect key="frame" x="0.0" y="37" width="286" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="xPY-Mw-dD1" firstAttribute="leading" secondItem="2NP-Ll-blN" secondAttribute="leading" constant="24" id="KxR-gm-SoY"/>
+                                    <constraint firstAttribute="trailing" secondItem="xPY-Mw-dD1" secondAttribute="trailing" constant="24" id="MGb-Pj-nYr"/>
+                                    <constraint firstAttribute="height" constant="200" id="bDC-FM-8Gc"/>
+                                    <constraint firstItem="xPY-Mw-dD1" firstAttribute="top" secondItem="2NP-Ll-blN" secondAttribute="top" constant="24" id="bzg-Ai-DLf"/>
+                                    <constraint firstAttribute="bottom" secondItem="xPY-Mw-dD1" secondAttribute="bottom" constant="24" id="ndn-sD-8Q5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.39528039383561642" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2NP-Ll-blN" firstAttribute="centerY" secondItem="tfl-yF-nN7" secondAttribute="centerY" id="Hgr-U1-iF9"/>
+                            <constraint firstItem="7kT-bX-3ne" firstAttribute="trailing" secondItem="2NP-Ll-blN" secondAttribute="trailing" constant="40" id="ItH-m4-Hpg"/>
+                            <constraint firstItem="2NP-Ll-blN" firstAttribute="leading" secondItem="7kT-bX-3ne" secondAttribute="leading" constant="40" id="xnl-ar-Wzx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7kT-bX-3ne"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDP-Xp-15f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.75362318840581" y="-283.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.seal.fill" catalog="system" width="64" height="62"/>
+    </resources>
+</document>

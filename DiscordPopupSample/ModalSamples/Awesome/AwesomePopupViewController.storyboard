@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuF-7B-gst">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Awesome Popup View Controller-->
+        <scene sceneID="rKY-8G-Mj4">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="QuF-7B-gst" customClass="AwesomePopupViewController" customModule="DiscordPopupSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3PJ-xc-L29">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0C-6r-KyE">
+                                <rect key="frame" x="40" y="328" width="334" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="cVM-8g-OLa">
+                                        <rect key="frame" x="24" y="24" width="286" height="192"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.seal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7q5-VK-VPS">
+                                                <rect key="frame" x="0.0" y="-0.5" width="286" height="58"/>
+                                                <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="JLk-kN-OiV"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-BY-dIT">
+                                                <rect key="frame" x="0.0" y="73" width="286" height="62"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A W E S O M E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bou-Zb-7th">
+                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you can become a part of our friendly community." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMd-BH-erp">
+                                                        <rect key="frame" x="0.0" y="28.5" width="286" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ioo-6W-FOd">
+                                                <rect key="frame" x="0.0" y="152" width="286" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3g-Az-sjh">
+                                                        <rect key="frame" x="63" y="0.0" width="160" height="40"/>
+                                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="hzj-dk-Nod"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="J O I N  U S">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="U3g-Az-sjh" firstAttribute="top" secondItem="Ioo-6W-FOd" secondAttribute="top" id="CO0-e3-Urg"/>
+                                                    <constraint firstItem="U3g-Az-sjh" firstAttribute="centerX" secondItem="Ioo-6W-FOd" secondAttribute="centerX" id="eT2-V2-ZSU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="U3g-Az-sjh" secondAttribute="bottom" id="lDl-vh-Phd"/>
+                                                    <constraint firstAttribute="height" constant="40" id="lLr-3i-ZM3"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="cVM-8g-OLa" firstAttribute="top" secondItem="i0C-6r-KyE" secondAttribute="top" constant="24" id="3RZ-Gk-soC"/>
+                                    <constraint firstAttribute="height" constant="240" id="95l-vz-efP"/>
+                                    <constraint firstAttribute="trailing" secondItem="cVM-8g-OLa" secondAttribute="trailing" constant="24" id="SpK-2O-PiP"/>
+                                    <constraint firstAttribute="bottom" secondItem="cVM-8g-OLa" secondAttribute="bottom" constant="24" id="UaF-23-jyq"/>
+                                    <constraint firstItem="cVM-8g-OLa" firstAttribute="leading" secondItem="i0C-6r-KyE" secondAttribute="leading" constant="24" id="vZm-wc-O7X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i0C-6r-KyE" firstAttribute="leading" secondItem="iNo-GZ-ljk" secondAttribute="leading" constant="40" id="7UE-Lw-swp"/>
+                            <constraint firstItem="iNo-GZ-ljk" firstAttribute="trailing" secondItem="i0C-6r-KyE" secondAttribute="trailing" constant="40" id="QfN-hw-nIn"/>
+                            <constraint firstItem="i0C-6r-KyE" firstAttribute="centerY" secondItem="3PJ-xc-L29" secondAttribute="centerY" id="ZUK-cj-sQS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iNo-GZ-ljk"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="i0C-6r-KyE" id="yAc-g9-dDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSG-Hb-pTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="-254.46428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.seal.fill" catalog="system" width="64" height="62"/>
+    </resources>
+</document>
